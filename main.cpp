@@ -9,7 +9,6 @@ double		I[5] = {0.16646, 0.110307, 0.07575, 0.04929, 0.02951};
 double		R[5] = { 10., 20., 30., 40., 50 };
 Polynomial	_Res;
 Polynomial	Res[5];
-Polynomial	mnoj[5];
 Polynomial	numerator[5];
 
 double		denominator[5] {1., 1., 1., 1., 1.};
@@ -47,7 +46,6 @@ void _fractions() {
 		denominator[i] = I[i] / denominator[i];
 		Res[i] = numerator[i] * denominator[i];
 		Res[i].bring_similar();
-//		Res[i].bubble_sort();
 	}
 }
 

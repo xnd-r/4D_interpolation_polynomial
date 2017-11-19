@@ -417,7 +417,7 @@ ostream& operator << (ostream& os, const Polynomial& p) {
 			os << temp->coef;
 		if (temp->deg / 10000)
 		{
-			os << "x^" << temp->deg / 10000;
+			os << "R^" << temp->deg / 10000;
 		}
 		if (temp->deg / 100 % 100)
 		{
